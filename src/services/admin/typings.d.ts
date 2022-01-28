@@ -28,7 +28,7 @@ declare namespace ADMIN_API {
     total?: number;
     success?: boolean;
   }
-  ;
+    ;
   //账号
   type UserListItem = {
     id?: number;
@@ -50,7 +50,24 @@ declare namespace ADMIN_API {
     total?: number;
     success?: boolean;
   };
-
+  //维修项目
+  type MaintenanceListItem = {
+    id?: number;
+    parent_id?: number;
+    item_name?: string
+    problem_description?: string
+    repair_mode?: string
+    norms?: string
+    condition?: string
+    unit?: string
+    exclusive_price?: string
+    create_time?: string
+  };
+  type MaintenanceDataSource = {
+    data?: MaintenanceListItem[];
+    total?: number;
+    success?: boolean;
+  };
   //订单
   type OrderListItem = {
     id?: number;
