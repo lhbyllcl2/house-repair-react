@@ -9,7 +9,7 @@
 export default {
   dev: {
     '/api/': {
-      target: 'http://127.0.0.1:10088',
+      target: 'http://yapi.smart-xwork.cn/mock/130329',
       changeOrigin: true,
     },
   },

@@ -16,13 +16,33 @@ const Staff: React.FC = () => {
       width: 60,
     },
     {
-      title: '角色名称',
+      title: '姓名',
       dataIndex: 'name',
     },
     {
-      title: '排序值',
+      title: '电话',
       dataIndex: 'sequence',
       hideInSearch: true,
+    },
+    {
+      title: '公司',
+      dataIndex: 'sequence',
+      hideInSearch: true,
+    },
+    {
+      title: '角色',
+      dataIndex: 'status',
+      valueType:'select',
+      valueEnum:{
+        1:{
+          status:'error',
+          text:'维修人员'
+        },
+        2:{
+          status:'success',
+          text:'审核人员'
+        }
+      }
     },
     {
       title: '状态',
@@ -49,7 +69,6 @@ const Staff: React.FC = () => {
       title: '备注',
       dataIndex: 'memo',
       hideInSearch: true,
-      width: 200,
     },
     {
       title: '操作',

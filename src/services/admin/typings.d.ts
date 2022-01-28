@@ -36,4 +36,21 @@ declare namespace ADMIN_API {
     total?: number;
     success?: boolean;
   };
+  //订单
+  type OrderListItem = {
+    id?: number;
+    order_no?: number;
+    name?: string
+    contact_number?: string
+    repair_time?: string
+    node_ps?: string
+    repair_staff?: string
+    audit_staff?: string
+    address?: string
+  };
+  type OrderList = {
+    data?: OrderListItem[];
+    total?: number;
+    success?: boolean;
+  };
 }
