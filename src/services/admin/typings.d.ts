@@ -6,6 +6,7 @@ declare namespace ADMIN_API {
     current?: number;
     pageSize?: number;
   };
+
   //菜单
   type MenuListItem = {
     id?: number;
@@ -16,6 +17,7 @@ declare namespace ADMIN_API {
     total?: number;
     success?: boolean;
   };
+
   //角色
   type RoleListItem = {
     id?: number;
@@ -25,7 +27,8 @@ declare namespace ADMIN_API {
     data?: RoleListItem[];
     total?: number;
     success?: boolean;
-  };
+  }
+  ;
   //账号
   type UserListItem = {
     id?: number;
@@ -36,6 +39,18 @@ declare namespace ADMIN_API {
     total?: number;
     success?: boolean;
   };
+
+  //部品
+  type PartListItem = {
+    id?: number;
+    name?: string
+  };
+  type PartDataSource = {
+    data?: PartListItem[];
+    total?: number;
+    success?: boolean;
+  };
+
   //订单
   type OrderListItem = {
     id?: number;
@@ -50,6 +65,24 @@ declare namespace ADMIN_API {
   };
   type OrderList = {
     data?: OrderListItem[];
+    total?: number;
+    success?: boolean;
+  };
+
+  //维修工程师
+  type StaffListItem = {
+    id?: number;
+    name?: string
+    contact_number?: string
+    company_name?: string
+    staff_code?: string
+    type?: number
+    status?: number
+    create_at?: string
+    remark?: string
+  };
+  type StaffList = {
+    data?: StaffListItem[];
     total?: number;
     success?: boolean;
   };

@@ -68,4 +68,6 @@ export default {
   'pages.searchTable.batchDeletion': 'bacth deletion',
   'pages.searchTable.batchApproval': 'batch approval',
   'pages.orderTable.showDetail': 'show detail',
+  'pages.tableRow.edit': 'edit',
+  'pages.tableRow.delete': 'delete',
 };

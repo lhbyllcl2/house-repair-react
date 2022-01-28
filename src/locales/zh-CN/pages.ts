@@ -65,4 +65,6 @@ export default {
   'pages.searchTable.batchDeletion': '批量删除',
   'pages.searchTable.batchApproval': '批量审批',
   'pages.orderTable.showDetail': '查看详情',
+  'pages.tableRow.edit': '编辑',
+  'pages.tableRow.delete': '删除',
 };

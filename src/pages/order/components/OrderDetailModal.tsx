@@ -113,8 +113,8 @@ const action =(
       <ButtonGroup>
         <Button>维修暂停</Button>
         <Button>非正常关闭</Button>
+        <Button>转单</Button>
       </ButtonGroup>
-      <Button type="primary">转单</Button>
     </Fragment>
   );
 const OrderDetailModal: React.FC<OrderModalProps> = (props) => {
